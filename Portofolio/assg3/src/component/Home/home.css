@@ -1,0 +1,120 @@
+.home{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+  .intro{
+    max-width: 540px;
+    text-align: center;
+
+  }
+
+  .home_img{
+    margin-bottom: 1.5rem;
+  }
+
+  .home_name {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 0.5rem;
+  }
+
+  .home_socials {
+    display: flex;
+    column-gap: 1.75rem;
+    margin: 1.5rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home_socials-link{
+    color:var(--tittle-color);
+    font-size: 1.3rem;
+    transition: .3s;
+  }
+
+  .home_img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1-px solid #fff;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .home_socials-link:hover{
+    color: hsl(43, 100%, 68%);
+  }
+
+.scroll_down{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    width: 100%;
+}
+.home_scroll-name{
+    font-size: var(--small-font-size);
+}
+
+.mouse{
+    border:2px solid #454364;
+    display: block;
+    height: 1.6rem;
+    width: 1.25rem;
+    margin: auto;
+    margin-top: .75rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+@keyframes ani-mouse{
+    0%{
+        top: 29%;
+    }
+
+    15%{
+        top: 50%;
+    }
+
+   50%{
+        top: 50%;
+    }
+
+    100%{
+        top: 29%;
+    }
+
+}
+.wheel{
+    background-color: var(--tittle-color);
+    border-radius: 100%;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    top: .5rem;
+    left: 50%;
+    transform: translate(-50%);
+    animation: ani-mouse 2s linear infinite;
+}
+
+.btn{
+  padding: 0.75rem 2rem;
+  line-height: 1;
+  border-radius: 1.875rem;
+  box-shadow: 0 0 1px rgb(0 0 0 /0%);
+  border: 1px solid transparent;
+  color: #fff;
+  display: inline-block;
+  background-color: var(--first-color);
+  font-weight: var(--font-bold);
+}
