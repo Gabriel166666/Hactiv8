@@ -1,0 +1,51 @@
+.experience_img{
+   padding-bottom: 5rem;
+}
+
+.exp_img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1-px solid #fff;
+    margin: 0;
+    padding: 0;
+
+}
+.experience_container{
+    
+    column-gap: 1.875rem;
+}
+
+.experience_data{
+    padding: 1.875rem;
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.875rem;
+    align-items: flex-start;
+    position: relative;
+
+}
+
+.experince_data ::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid var(--container-color);
+    position: absolute;
+    left: -0.93rem;
+    top: 20%;
+
+}
+.experience_description{
+    margin-bottom: 1rem;
+    text-align: justify;
+}
