@@ -4,12 +4,10 @@ import Sidebar from './component/Sidebar/Sidebar';
 import Home from './component/Home/Home';
 import Experience from './component/Experience/Experience';
 import Skill from './component/Skill/Skill';
-import Award from './component/Award/Award';
+import Education from './component/Education/Education';
 import About from './component/about/About';
 import Interest from './component/Interest/Interest';
-import Resume from './component/Resume/Resume';
-import Portofolio from './component/Portofolio/Portofolio';
-
+import Award from './component/Awards/Awards';
 
 
 const App = () => {
@@ -20,11 +18,10 @@ const App = () => {
     <Home />
     <About />
     <Experience />
+    <Education />
     <Skill />
     <Interest />
     <Award />
-    <Resume />
-    <Portofolio />
   </main>
   </>
   )
