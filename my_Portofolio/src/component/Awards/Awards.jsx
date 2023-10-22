@@ -1,7 +1,8 @@
-import React from "react";
+import React, {Component} from "react";
 import "./award.css";
 
-const Awards = () => {
+class Awards extends Component{
+    render(){
     return(
         <section className="education container section" id='about'>
         <h2 className="section_tittle">Award</h2>
@@ -33,6 +34,7 @@ const Awards = () => {
             </div>
     </section>
     )
+    }
 }
 
 export default Awards

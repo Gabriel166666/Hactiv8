@@ -1,8 +1,12 @@
-import React from "react";
+import React,{Component} from "react";
 import "./experience.css";
 import Imgae from "../../asset/motobatt2.jpeg"
 import alta from "../../asset/alterra.jpeg"
-const Experience = () => {
+
+
+
+class Experience extends Component {
+    render(){
     return(
         <section className="experience container section" id='about'>
             <h2 className="section_tittle">My Experience</h2>
@@ -48,7 +52,9 @@ is the final project result of the final project <br />
             </div>
         </section>
     )
+    }
 }
+
 
 
 export default Experience

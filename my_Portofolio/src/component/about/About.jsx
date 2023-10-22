@@ -1,8 +1,9 @@
-import React from "react";
+import React,{Component} from "react";
 import "./about.css";
 import Imgae from "../../asset/myfoto.jpg"
 
-const About = () => {
+class About extends Component {
+    render(){
     return(
         <section className="about container section" id='about'>
             <h2 className="section_tittle">About Me</h2>
@@ -51,6 +52,7 @@ const About = () => {
             </div>
         </section>
     )
+    }
 }
 
 export default About

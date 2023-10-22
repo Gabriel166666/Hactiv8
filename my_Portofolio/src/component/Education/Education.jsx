@@ -1,7 +1,8 @@
-import React from "react";
+import React,{Component} from "react";
 import "./education.css";
 
-const Education = () => {
+class Education extends Component {
+    render(){
     return(
         <section className="education container section" id='about'>
         <h2 className="section_tittle">Education</h2>
@@ -35,6 +36,7 @@ const Education = () => {
             </div>
     </section>
     )
+    }
 }
 
 export default Education

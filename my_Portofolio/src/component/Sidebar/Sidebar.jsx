@@ -1,12 +1,13 @@
-import React from "react";
+import React,{Component} from "react";
 import "./sidebar.css";
-import Logo from "../../asset/logo.svg";
 
-const Sidebar = () => {
-    return(
+
+class Sidebar extends Component {
+    render(){
+
+     return(
         <aside className="aside">
             <a href="#home" className="nav_logo">
-                <img src={Logo} alt="" />
             </a>
 
             <nav className="nav">
@@ -61,8 +62,11 @@ const Sidebar = () => {
                 <span className="copyright"> &copy; 2022 - 2023 .</span>
              </div>
         </aside>
+    
     )
+     }  
 }
+
 
 
 export default Sidebar

@@ -1,10 +1,11 @@
-import React from "react";
+import React ,{Component} from "react";
 import "./home.css";
 import Me from "../../asset/myfoto.jpg"
 import ScrollDowm from "./ScrollDown";
 import HeaderSocial from "./HeaderSocial";
 
-const Home = () => {
+class Home extends Component{
+    render(){
     return(
         <section className="home container" id="home">
             <div className="intro">
@@ -20,7 +21,10 @@ const Home = () => {
 
             </div>
         </section>
-    )       
+        
+        
+    )  
+    }     
 }
 
 export default Home
